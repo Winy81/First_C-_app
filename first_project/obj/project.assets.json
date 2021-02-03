@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "first_project.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/first_project.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/first_project.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "first_project.Domain/1.0.0": {
+      "type": "project",
+      "path": "../first_project.Domain/first_project.Domain.csproj",
+      "msbuildProject": "../first_project.Domain/first_project.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "first_project.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/anemeth/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/anemeth/Desktop/private_project/c_sharp_projects/first_project/first_project.Domain/first_project.Domain.csproj": {
+              "projectPath": "/Users/anemeth/Desktop/private_project/c_sharp_projects/first_project/first_project.Domain/first_project.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -6,4 +6,9 @@
 
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'first_project' " />
+  <ItemGroup>
+    <ProjectReference Include="..\first_project.Domain\first_project.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
